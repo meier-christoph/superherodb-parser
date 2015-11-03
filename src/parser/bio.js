@@ -1,10 +1,13 @@
 'use strict';
 
 const parser = require('x-ray')();
+const debug = require('../debug')('bio::parser');
+
 
 const searchParser = html => {
   return new Promise((resolve, reject) => {
 
+    debug(`Parsing HTML ${html}`);
     parser(html, {
       name: '.titlehome h1',
       real: '.titlehome h2',

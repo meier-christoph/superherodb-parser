@@ -11,6 +11,8 @@
     "no-var": 0,
     "comma-dangle": 0,
     "padded-blocks": 0,
-    "strict": 0
+    "strict": 0,
+    "id-length": [2, {"min": 3, "properties": "never", "exceptions": ["_"]}]
+
   }
 }

@@ -2,7 +2,7 @@
 
 const assert = require('chai').assert;
 
-const sanitizer = require('../../src/terms');
+const sanitizer = require('../../src/terms/index');
 
 
 describe('Term sanitation', () => {
