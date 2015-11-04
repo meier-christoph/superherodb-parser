@@ -1,5 +1,8 @@
 # SuperheroDB Parser
 
+[![Build Status](https://travis-ci.org/guumaster/superherodb-parser.svg)](https://travis-ci.org/guumaster/superherodb-parser)
+[![Coverage Status](https://coveralls.io/repos/guumaster/superherodb-parser/badge.svg?branch=master&service=github)](https://coveralls.io/github/guumaster/superherodb-parser?branch=master)
+
 This project is only an example of how to create a parser/API based on web scrapping. Its only purpose is to show/learn 
 a more functional/promise-friendly way of scrapping the web. 
 
