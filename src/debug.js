@@ -2,4 +2,4 @@
 
 const debug = require('debug');
 
-module.exports = (module) => debug(`shdb:${module}`);
+module.exports = (module) => debug(`superheroapi:${module}`);
