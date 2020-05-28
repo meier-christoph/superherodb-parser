@@ -1,13 +1,13 @@
 'use strict';
 
 const bio = require('./bio');
-const equipment = require('./equipment');
 const powers = require('./powers');
+const history = require('./history');
 const search = require('./search');
 
 module.exports = {
   bio,
-  equipment,
   powers,
-  search
+  history,
+  search,
 };

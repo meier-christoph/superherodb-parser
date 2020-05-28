@@ -11,13 +11,11 @@ const searchParser = html => {
         match: 'a',
         type: 'i@class'
       }])
-    })((err, obj) =>{
+    })((err, obj) => {
       if (err) return reject(err);
-
       return resolve(obj);
     });
   });
-
 };
 
 module.exports = searchParser;

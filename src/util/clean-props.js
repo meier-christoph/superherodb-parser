@@ -3,7 +3,7 @@
 const _ = require('lodash');
 
 const cleanValue = (val) => {
-  if ( _.isString(val) ) return val.trim();
+  if (_.isString(val)) return val.trim();
   return val;
 };
 

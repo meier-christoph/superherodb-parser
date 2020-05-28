@@ -1,6 +1,6 @@
 'use strict';
 
-const shdb = require('superherodb-parser');
+const shdb = require('../src');
 
 const heroName = 'hulk';
 

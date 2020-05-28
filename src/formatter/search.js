@@ -2,6 +2,7 @@
 
 const aliasRe = / \(alias\)/;
 const groupRe = / fa-users/;
+
 module.exports = (searchResult) => {
   const formatted = searchResult.results.map(result => {
     const name = result.match.split(' --- ');

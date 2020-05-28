@@ -5,7 +5,6 @@ const sanitize = require('../terms');
 
 module.exports = (term) => {
   const searchTerm = sanitize(term);
-
   if (!searchTerm) {
     throw new Error('Missing search term');
   }

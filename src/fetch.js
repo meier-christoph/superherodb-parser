@@ -1,7 +1,5 @@
 'use strict';
 
-const request = require('request-promise');
-
 const debug = require('./debug')('fetch');
 const urls = require('./urls');
 const parser = require('./parser');
@@ -14,12 +12,10 @@ const fetch = (heroPath) => {
 
   const promises = Object.keys(heroUrls)
     .map(type => {
-
       debug(`Fetching ${type} from ${heroUrls[type]}`);
-      return request(heroUrls[type])
+      return Promise.resolve(heroUrls[type])
         .then(parser[type])
-        .then(formatter[type])
-        .then(result => { debug(`Partial result ${type}`, result); return result; });
+        .then(formatter[type]);
     });
 
   return Promise
